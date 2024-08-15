@@ -35,7 +35,7 @@ app.get("/api", async (req, res) => {
           }
         });
       });
-      res.type("application/json").json(perkData);
+      res.type("application/json").json(rawData);
     } catch (parseErr) {
       console.log(parseErr);
       res.status(500).json({ error: "Failed to parse JSON" });

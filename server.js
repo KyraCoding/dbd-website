@@ -1,5 +1,6 @@
 const express = require("express");
 const fetch = require("node-fetch");
+const cheerio = require("cheerio")
 const fs = require("fs");
 const path = require("path");
 
@@ -16,12 +17,27 @@ app.get("/api", async (req, res) => {
         .status(500)
         .json({ error: "File not found or unable to read file" });
     }
-
     try {
-      const jsonData = JSON.parse(data);
-
-      res.json(jsonData);
+      const rawData = JSON.parse(data);
+      const perkData = rawData.perks
+      const tags = ["generator", "aura"]
+      perkData.forEach(perk => {
+        perk.img = `https://cdn.nightlight.gg/img/perks/${perk.img}.png`
+        delete(perk.url)
+        delete(perk.id)
+        delete(perk.tier)
+        perk.tags = []
+        const $ = cheerio.load(perk.description);
+        perk.description = $.text()
+        tags.forEach(tag =>{
+          if (perk.description.indexOf(tag) > -1) {
+            perk.tags.push(tag)
+          }
+        })
+      })
+      res.type('application/json').json(perkData)
     } catch (parseErr) {
+      console.log(parseErr)
       res.status(500).json({ error: "Failed to parse JSON" });
     }
   });

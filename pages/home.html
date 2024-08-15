@@ -42,7 +42,7 @@
         var response = await fetch("/api");
         var data = await response.json();
         console.log(data);
-        var perks = data.perks;
+        var perks = data;
         perks.forEach((perk) => {
           var perkDiv = document.createElement("div");
           perkDiv.className = "flex flex-row w-1/2 h-60 bg-slate-600 rounded ";

@@ -782,7 +782,7 @@
   {
     "name": "Dominance",
     "role": "Killer",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8d/IconPerks_Dominance.png/revision/latest?cb=20240806171415",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8d/IconPerks_Dominance.png",
     "rank": 85,
     "character": "The Dark Lord",
     "description": "The first time each totem and each chest is interacted with by a Survivor, that totem or chest is blocked by the Entity for 4/6/8 seconds.The auras of blocked totems and chests are revealed to you in white.",
@@ -862,7 +862,7 @@
   {
     "name": "Exultation",
     "role": "Survivor",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/22/IconPerks_Exultation.png/revision/latest?cb=20240806171416",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/22/IconPerks_Exultation.png",
     "rank": 116,
     "character": "Trevor Belmont",
     "description": "Stunning the Killer with a pallet upgrades your held item rarity to the next tier, then recharges 25% of the item's maximum charges.Rarity is not kept at the end of the trial.This perk has a 40/35/30-second cooldown.",
@@ -872,7 +872,7 @@
   {
     "name": "Eyes of Belmont",
     "role": "Survivor",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/25/IconPerks_EyesOfBelmont.png/revision/latest?cb=20240806171417",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/25/IconPerks_EyesOfBelmont.png",
     "rank": 116,
     "character": "Trevor Belmont",
     "description": "When a generator is completed, the aura of the Killer is revealed to you for 1/2/3 seconds.Whenever a Killer's aura is revealed for a specified amount of time, that time is increased by 2 seconds.",
@@ -1062,7 +1062,7 @@
   {
     "name": "Hardened",
     "role": "Survivor",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_hardened.png/revision/latest?cb=20240625161545",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/fe/IconPerks_hardened.png",
     "rank": 71,
     "character": "Lara Croft",
     "description": "This perk activates after you complete all of the following:unlock a chest;cleanse or bless a totem.For the rest of the trial, anytime you would scream, reveal the Killer's aura for 3/4/5 seconds instead.",
@@ -1232,7 +1232,7 @@
   {
     "name": "Hex: Wretched Fate",
     "role": "Killer",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/81/IconPerks_HexWretchedFate.png/revision/latest?cb=20240806171418",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/81/IconPerks_HexWretchedFate.png",
     "rank": 85,
     "character": "The Dark Lord",
     "description": "After one generator has been repaired, a random Dull Totem becomes a Hex Totem and curses the Obsession.The Obsession suffers a 27/30/33% repair speed penalty. They also see this Hex Totem's aura when within 12 meters.This effect persists until the Hex Totem is cleansed.The Killer can only be obsessed with one Survivor at a time.",
@@ -1252,7 +1252,7 @@
   {
     "name": "Hope",
     "role": "Survivor",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hope.png/revision/latest?cb=20160605204928",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hope.png",
     "rank": 21,
     "character": "",
     "description": "The growing odds of a successful escape fill you with hope and give you wings. As soon as the exit gates are powered you gain a 5/6/7% Haste status effect.Haste increases Survivor movement speed.",
@@ -1272,7 +1272,7 @@
   {
     "name": "Human Greed",
     "role": "Killer",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/06/IconPerks_HumanGreed.png/revision/latest?cb=20240806171419",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/06/IconPerks_HumanGreed.png",
     "rank": 85,
     "character": "The Dark Lord",
     "description": "You see the auras of unopened chests and Survivor auras are revealed for 3 seconds when they enter a 8-meter range.You gain the ability to kick chests to close them. This ability has a 80/70/60-second cooldown. Survivors unlock these chests 50% faster.- Dracula",
@@ -1612,7 +1612,7 @@
   {
     "name": "Moment of Glory",
     "role": "Survivor",
-    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/98/IconPerks_MomentOfGlory.png/revision/latest?cb=20240806171421",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/98/IconPerks_MomentOfGlory.png",
     "rank": 116,
     "character": "Trevor Belmont",
     "description": "This perk activates after you open or rummage through 2 chests.When you become injured, you also become Broken.Automatically heal 1 health state after 80/70/60 seconds. Then, this perk deactivates.This effect is canceled if you enter the dying state.This perk will not activate if you are already suffering from the Broken status effect.Broken prevents Survivors from being healed.",

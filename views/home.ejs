@@ -29,9 +29,14 @@
         A Dead By Daylight buildcrafting tool by KyraCoding
       </div>
     </div>
+    
     <div id="perksList" class="flex flex-col items-center gap-3 p-6">
+      <h1 class="flex text-xl font-bold">
+        Search for perks:
+      </h1>
+      <input id="search" class="flex w-1/2 p-3 justify-center text-black">
       <% data.forEach((perk) => { %>
-        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded">
+        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>">
           <div class="flex flex-col bg-purple-950 w-1/3 p-3">
             <img src=<%= perk.img %> class="flex justify-self-center w-full">
           </div>
@@ -55,5 +60,17 @@
         </div>
       <% }) %>
     </div>
+    <script>
+      document.getElementById("search").addEventListener("input", event => {
+        const perks = document.querySelectorAll('[data-name]');
+        perks.forEach((perk) => {
+          if (perk.dataset.name.toLowerCase().indexOf(event.target.value.toLowerCase()) > -1) {
+            perk.classList.remove("hidden")
+          } else {
+            perk.classList.add("hidden")
+          }
+        })
+      })
+    </script>
   </body>
 </html>

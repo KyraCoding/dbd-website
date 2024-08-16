@@ -51,7 +51,7 @@
     </div>
     <script>
       async function getAPI() {
-        var response = await fetch("/api");
+        var response = await fetch("/generate");
         var data = await response.json();
         console.log(data);
         var perks = data;

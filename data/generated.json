@@ -36,7 +36,7 @@
     "rank": 93,
     "character": "Jeff Johansen",
     "description": "Unlocks potential in one's aura reading ability.You see the aura of every Survivor that:You rescue from a hook, or rescues you from a hook;You complete a healing action on, or completes a healing action on you.They also see your aura.This occurs for up to 1/2/3 Survivors. All effects of Aftercare are reset when you are hooked by The Killer.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“A Mercy that Rips the Storm.”Oil work to honor my best buddies who happen to be the best musicians I know. Their first album is still my favorite. It got me through a dark time in my life. –Jeff, oil on canvas, 16x16"
   },
   {
@@ -46,7 +46,7 @@
     "rank": 17,
     "character": "The Trapper",
     "description": "You get excited in anticipation of hooking your prey.Increases your movement speed while transporting bodies by 6/12/18%. While transporting a body, your Terror Radius is increased by 12 meters.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"At some point, the excitement of hooking one of us becomes more important than the desire to kill us.\""
   },
   {
@@ -66,7 +66,7 @@
     "rank": 64,
     "character": "The Xenomorph",
     "description": "This perk activates when you hook a Survivor.You see the aura of the farthest injured Survivor for 5 seconds and that Survivor is Oblivious for 16/18/20 seconds.Oblivious prevents Survivors from hearing or being affected by the Killer's Terror Radius.",
-    "tags": ["aura", "hook a Survivor"],
+    "tags": ["aura", "hook"],
     "flavorText": "You are so stealthy, sometimes it seems like you appear out of nowhere.“Yellow light's for my eyes only.” –Dallas"
   },
   {
@@ -96,7 +96,7 @@
     "rank": 44,
     "character": "Adam Francis",
     "description": "You start the trial with a -15% progress penalty for Skill Checks to heal other Survivors.For every successful Skill Check while healing another Survivor, you receive a token up to a maximum of 3/4/5 tokens.Each token grants you a +15% progress bonus.Great Skill Checks cannot be performed while using Autodidact.Autodidact is not active when using a Med-kit to heal.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": "“There's no limit to what you can achieve, as long as you back it up with hard work.” -Adam Francis"
   },
   {
@@ -116,7 +116,7 @@
     "rank": 48,
     "character": "Steve Harrington",
     "description": "While you have a reputation for being self-centered, you risk it all to help those in need.When you unhook a Survivor, they won't leave scratch marks or pools of blood, and they gain a 10% Haste status effect for 20/25/30 seconds.You see the Killer's aura for 8 seconds.Haste increases Survivor movement speed.",
-    "tags": ["aura", "hook a Survivor"],
+    "tags": ["aura", "hook"],
     "flavorText": "“I promised to keep you shitheads safe, and that's exactly what I plan on doing.” -Steve Harrington"
   },
   {
@@ -156,7 +156,7 @@
     "rank": 3,
     "character": "The Cannibal",
     "description": "A deep bond with The Entity unlocks potential in one's aura reading ability.After hooking a Survivor, all other Survivors' auras are revealed to you for 5 seconds when they are further than 60/50/40 meters from the hook.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"I just can't take no pleasure in killing. There's just some things you gotta do. Don't mean you have to like it.\" -Drayton Sawyer"
   },
   {
@@ -166,7 +166,7 @@
     "rank": 77,
     "character": "Aestri Yazar",
     "description": "Press the Ability button 1 while standing and motionless to enter the performance interaction that lasts up to 15 seconds and empowers Survivors within 16 meters. Roll a d20. This effect lasts for 90 seconds if the performance is completed.1 | You scream, but nothing happens2-10 | Skill Checks give +1% progress11-19 | Skill Checks give +2% progress20 | Skill Checks give +3% progressWhen the ability is canceled or the performance completes, it goes on cooldown for 110/100/90 seconds.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": "It's time to give your audience a show. Will you bring the house down or will you choke? \"Listen closely! I'm about to save your life!\" - Aestri"
   },
   {
@@ -216,7 +216,7 @@
     "rank": 63,
     "character": "Leon S. Kennedy",
     "description": "Pain hurts you as much as anyone, but you'd prefer others don't know that.When healing, you and the Survivor you're healing make no noise, including grunts of pain. There is no noise notification on failed healing Skill Checks and healing regresses by only 3/2/1%.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": "\"I can do this.\" —Leon S. Kennedy"
   },
   {
@@ -224,7 +224,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_bitterMurmur.png",
     "rank": 32,
-    "character": "",
+    "character": "General Killer",
     "description": "Unlocks potential in one's aura reading ability. Each time a generator is fully repaired, Survivors within 16 meters of the completed generator will be revealed for 5 seconds.When the last generator is fully repaired, all the Survivors' auras are revealed for 5/7/10 seconds.",
     "tags": ["generator", "aura"],
     "flavorText": ""
@@ -246,7 +246,7 @@
     "rank": 78,
     "character": "The Oni",
     "description": "The agony of one is inflicted on others.When hooking a Survivor, all other injured Survivors suffer from the Hemorrhage and Exhausted status effect for 45 seconds.Blood Echo has a cooldown of 80/70/60 seconds.Exhausted prevents Survivors from activating perks that cause Exhausted.Hemorrhage regresses healing progress when not healing, and increases blood trails left by injured Survivors. This lasts for a set duration or until healed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“Attack an enemy with precision and their allies will feel it.” -Renjiro's Doctrine 6:3"
   },
   {
@@ -266,7 +266,7 @@
     "rank": 107,
     "character": "Renato Lyra",
     "description": "Your mind and body are honed for great feats, allowing you to push through with extra effort when necessary.This perk activates once you are one hook away from instant death.While healthy, running, and suffering from Exhausted , press the Active Ability Button 1 to lose a health state and recover from Exhausted instantly and gain the Broken status effect for 28/24/20 seconds.You are automatically healed from injured to healthy after 28/24/20 seconds. Being put into the dying state will cancel the healing effect.Activating Blood Rush will disable it for the remainder of the trial.Exhausted prevents Survivors from activating other perks that cause Exhausted.Broken prevents Survivors from being healed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“Just gotta… push through.” –Renato Lyra"
   },
   {
@@ -276,7 +276,7 @@
     "rank": 49,
     "character": "The Nightmare",
     "description": "As soon as an exit gate is opened, Blood Warden is activated. The auras of any Survivors located within Exit areas are revealed to you. Once per match, hooking a Survivor while Blood Warden is active calls upon The Entity to block both Exits for all Survivors for 30/40/60 seconds.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“This is my world. And you can't ever leave.” - Freddy Krueger"
   },
   {
@@ -296,7 +296,7 @@
     "rank": 30,
     "character": "Kate Denson",
     "description": "You are a battler and do everything to escape a foe's grasp. Your struggling effects on The Killer are increased by 60/70/80%. You obscure The Killer's ability to see hook auras within 16 meters.You gain 33 % of current wiggling progress when the Killer drops from great heights.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“Buck and Wild, Swing to be free, Your hands just can't keep ahold of me.”-Kate Denson's “Boil Over”"
   },
   {
@@ -366,7 +366,7 @@
     "rank": 41,
     "character": "William \"Bill\" Overbeck",
     "description": "You are fueled by unexpected energy when saving an ally from a hook.Survivors you unhook:Keep their Endurance status effect for an extra 6/8/10 seconds.Keep their movement speed bonus for an extra 10 seconds.Endurance prevents a Survivor from being downed, inflicting Deep Wound instead.Deep Wound will put a Survivor in the dying state unless it is mended before the timer runs out.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"Probably stings like hell, but it ain't gonna kill ya. Up and at 'em soldier. Time to move!\" — Bill Overbeck"
   },
   {
@@ -386,7 +386,7 @@
     "rank": 89,
     "character": "Jeff Johansen",
     "description": "Any time you are removed from a hook (escaped or saved), the hook breaks and the Killer's aura is shown to you for 4/5/6 seconds. A hook broken by this perk takes 180 seconds to respawn.Here's a sketch/painting on a piece of wood I saw by the side of the road. I felt like it got a story to tell. And it didn't waste its second chance. –Jeff, ink and oil wash on slice of wood, 12x16",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“Charge from the Belly of the Beast.”"
   },
   {
@@ -436,7 +436,7 @@
     "rank": 40,
     "character": "The Onryō",
     "description": "Your psychic abilities influence technology in devastating ways.After damaging a generator this perk becomes active for 60 seconds.The generator regresses at 115/120/125% of the normal regression speed and you can see its aura in yellow.Each time a Survivor completes a good Skill Check on a generator affected by this perk, you receive a loud noise notification.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "skill check"],
     "flavorText": ""
   },
   {
@@ -456,7 +456,7 @@
     "rank": 106,
     "character": "Steve Harrington",
     "description": "Life has taught you the importance of friendship which has given you strength.While you are on the hook in the struggle phase, Camaraderie activates.If another Survivor is within 16 meters of you while Camaraderie is activated, the hook timer is paused for 26/30/34 seconds.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"So, remember once you get in there… pretend like you don't care. There you go, you're learning my friend. You're learning.” -Steve Harrington"
   },
   {
@@ -486,7 +486,7 @@
     "rank": 94,
     "character": "Mikaela Reid",
     "description": "There is an intrinsic energy in you that sees beyond your vision.Clairvoyance activates whenever you cleanse or bless a Totem.When empty-handed, hold the Ability Button to unlock your full aura-reading potential. For up to 8/9/10 seconds, you see the auras of exit gate switches, generators, hooks, chests and the Hatch within a 64 meter range.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "hook"],
     "flavorText": "\"Does anyone else see that? Just me?\" —Mikaela Reid"
   },
   {
@@ -496,7 +496,7 @@
     "rank": 113,
     "character": "Jonah Vasquez",
     "description": "You quickly analyze problems and correct other's work when they make a mistake.You start the trial with 1/2/3 token(s) and gain a token, up to a maximum of 5, for every great Skill Check.When a Survivor fails a Normal Skill Check while cooperating with you, 1 token is consumed and their failed Skill Check becomes a good Skill Check.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": "\"Can't hurt to have another set of eyes on the problem.\" —Jonah Vasquez"
   },
   {
@@ -516,7 +516,7 @@
     "rank": 59,
     "character": "The Clown",
     "description": "Even those without a fear of clowns know to be terrified of you.Survivors within your Terror Radius have a 30/40/50% penalty to healing progression speed, and healing Skill Checks move 50% faster.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": ""
   },
   {
@@ -594,7 +594,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/92/IconPerks_darkSense.png",
     "rank": 53,
-    "character": "",
+    "character": "General Survivor",
     "description": "Unlocks potential in one's aura reading ability. Each time a generator is completed, Dark Sense activates.While Dark Sense is active, the Killer entering a 24-meter radius around you reveals their aura for 5/7/10 seconds.Once the aura's duration expires, Dark Sense deactivates.",
     "tags": ["generator", "aura"],
     "flavorText": "\"Take it from an old-timer: Slow down, don't rush and try not to worry so much! The best way to beat him is to know how he thinks.\" -Lost Tapes: Murf"
@@ -616,7 +616,7 @@
     "rank": 8,
     "character": "David King",
     "description": "You can take a beating.Dead hard activates after you are unhooked or unhook yourself.When injured, tap into your adrenaline bank to avoid incoming damage. Press the Active Ability Button 1 while running to gain the Endurance status effect for the next 0.5 seconds.Causes the Exhausted status effect for 60/50/40 seconds.Dead Hard then deactivates.Endurance prevents a Survivor from being downed, inflicting Deep Wound instead.Deep Wound will put a Survivor in the dying state unless it is mended before the timer runs out.Exhausted prevents survivors from activating exhausting perks.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“We were walkin' through t'ginnel one night when a beer bottle flew past me, then another, and another. I thought to myself, “Gonna 'ave some fun ‘ere lads, let's get stuck in!” It were a right dust up, I swear down!” -David King"
   },
   {
@@ -626,7 +626,7 @@
     "rank": 23,
     "character": "The Deathslinger",
     "description": "When you hook a Survivor, Dead Man's Switch activates for the next 20/25/30 seconds. While activated, any Survivor that stops repairing a generator before it is fully repaired causes The Entity to block the generator until Dead Man's Switch's effect ends. Affected generators are highlighted by a white aura.",
-    "tags": ["generator", "aura", "hook a Survivor"],
+    "tags": ["generator", "aura", "hook"],
     "flavorText": "\"I've seen the look on a man's face when he realizes he's going to die.\" -Caleb Quinn"
   },
   {
@@ -676,7 +676,7 @@
     "rank": 10,
     "character": "Laurie Strode",
     "description": "Stab at your aggressor in an attempt to escape.After being unhooked or unhooking yourself, Decisive Strike activates for 40/50/60 seconds.While active, complete a Skill Check when grabbed by the Killer to escape, stunning them for 4 seconds.Succeeding or failing the Skill Check disables Decisive Strike.You become the Obsession after stunning the Killer.The perk and its effects are disabled if the exit gates are powered.Increases your chance to be the Obsession.Taking any Conspicuous Action will deactivate Decisive Strike.The Killer can only be obsessed with one Survivor at a time.",
-    "tags": [],
+    "tags": ["skill check", "hook"],
     "flavorText": "\"There is nothing to be scared of.\" –Laurie Strode"
   },
   {
@@ -684,7 +684,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/01/IconPerks_deerstalker.png",
     "rank": 59,
-    "character": "",
+    "character": "General Killer",
     "description": "Unlocks potential in one's aura reading ability. Reveals dying survivors' auras when standing within a 20/28/36 meter range.",
     "tags": ["aura"],
     "flavorText": ""
@@ -694,7 +694,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/89/IconPerks_dejaVu.png",
     "rank": 6,
-    "character": "",
+    "character": "General Survivor",
     "description": "The auras of 3 generators which are in close proximity to one another are revealed to you.Gain a 4/5/6% repair speed bonus on the revealed generators.",
     "tags": ["generator", "aura"],
     "flavorText": ""
@@ -706,7 +706,7 @@
     "rank": 31,
     "character": "Adam Francis",
     "description": "After performing a safe hook rescue on another Survivor, Deliverance activates.You now have a 100% chance of unhooking yourself during the escape attempt.A successful Deliverance from the hook triggers the Broken status effect for 100/80/60 seconds.Broken prevents Survivors from being healed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“I was raised by a strict man who taught me how to make the best of a bad situation.” -Adam Francis"
   },
   {
@@ -716,7 +716,7 @@
     "rank": 68,
     "character": "Felix Richter",
     "description": "You refuse to fail, even during your darkest hour.For each injured, hooked, or dying Survivor, increase the speed of your healing and unhook actions by 10/12/14%.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"When they come with a wrecking ball, build stronger walls.” —Felix Richter"
   },
   {
@@ -764,7 +764,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/94/IconPerks_distressing.png",
     "rank": 44,
-    "character": "",
+    "character": "General Killer",
     "description": "Your horrifying emanation strikes at a supernaturally long distance.Your Terror Radius is increased by 22/24/26%. Gain 100% more Bloodpoints for actions in the Deviousness category.",
     "tags": [],
     "flavorText": "\"Bask in their fear.\""
@@ -816,7 +816,7 @@
     "rank": 64,
     "character": "The Shape",
     "description": "You become obsessed with one Survivor.Your Obsession gains a 33% action speed bonus to unhooking and healing other Survivors.Each time you hook a Survivor other than the Obsession, if the Obsession is alive, gain a token.If the Obsession is alive, all Survivors who are not the Obsession get 2/2.5/3% penalty to repair, healing and sabotage speeds for each token.The Killer can only be obsessed with one Survivor at a time.",
-    "tags": ["hook a Survivor"],
+    "tags": ["hook"],
     "flavorText": "\"This isn't a man...\" -Dr.Sam Loomis "
   },
   {
@@ -886,7 +886,7 @@
     "rank": 86,
     "character": "Yun-Jin Lee",
     "description": "Sometimes the sacrifice of others is necessary to get ahead.Whenever another Survivor is hooked, you gain 1/2/3 tokens. You consume all tokens after a great Skill Check on a generator. Each token consumed grants a 1% bonus progression for great Skill Checks when repairing generators.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check", "hook"],
     "flavorText": "\"The weak are sacrificed first. It's nature, it's business... it's the truth most refuse to face.\" — Yun-Jin"
   },
   {
@@ -946,7 +946,7 @@
     "rank": 74,
     "character": "Vittorio Toscano",
     "description": "In your countless years in the fog, you've seen it all, and when you're focused, you can remember most of it, too.Hitting a great Skill Check while repairing a generator reveals the Killer's aura to you for 4/5/6 seconds.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "skill check"],
     "flavorText": "\"I have seen great cruelty… and I have also seen another way. \" - Vittorio Toscano"
   },
   {
@@ -1006,7 +1006,7 @@
     "rank": 23,
     "character": "The Good Guy",
     "description": "You become obsessed with one Survivor.When you hook a Survivor that is not the Obsession, the Obsession becomes Exposed for 20 seconds and reveals their aura for 6/8/10 seconds.When you hook the Obsession, another random Survivor screams and reveals their position and becomes the Obsession.The Killer can only be obsessed with one Survivor at a time.Exposed Survivors will be downed by basic attacks even if uninjured ",
-    "tags": ["aura", "hook a Survivor"],
+    "tags": ["aura", "hook"],
     "flavorText": "You'll kill anyone who gets between you and your target.\"I got some fresh meat lined up, and I'm not gonna let you spoil it, not this time!\" – Chucky"
   },
   {
@@ -1016,7 +1016,7 @@
     "rank": 62,
     "character": "The Ghost Face",
     "description": "You lurk in the shadows, eliminating your victims one by one.You become obsessed with one Survivor. When your Obsession is hooked, gain the Undetectable status effect and a 5 % Haste status effect for 14/16/18 seconds.When a Survivor rescues the Obsession from a hook, the rescuer becomes the Obsession. The Killer can only be obsessed with one Survivor at a time.Undetectable hides the Killer's aura, Terror Radius, and Red Stain.Haste increases Killer movement speed.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"You have no idea what I have planned for you. It'll be in the news for weeks: I'll make sure of it.\" –The Ghost Face"
   },
   {
@@ -1036,7 +1036,7 @@
     "rank": 47,
     "character": "The Deathslinger",
     "description": "You've got an ear for well-oiled gears.After a survivor loses a health state by any means, Gearhead activates for  30 seconds.While Gearhead is active, every time a Survivor performs a good Skill Check while repairing, their aura is revealed to you for  6/7/8 seconds.",
-    "tags": ["aura"],
+    "tags": ["aura", "skill check"],
     "flavorText": "\"Sometimes a man's best work is what puts him in the grave.\" -The prison warden"
   },
   {
@@ -1056,7 +1056,7 @@
     "rank": 12,
     "character": "The Artist",
     "description": "Your act of servitude to The Entity has not gone unnoticed.Each time a Survivor is hooked for the first time, gain a token. When moving 16 meters away from the hook, all generators are blocked for 6/8/10 seconds.Upon reaching 4 tokens, when moving 16 meters away from the hook, The Entity instead blocks all generators for 40 seconds. The Obsession's aura is revealed to you for 6 seconds.Then, Grim Embrace deactivates.The Killer can only be obsessed with one Survivor at a time.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "hook"],
     "flavorText": "\"Are we nothing but prisoners to our sorrow?\"—Carmina Mora"
   },
   {
@@ -1106,7 +1106,7 @@
     "rank": 22,
     "character": "The Hag",
     "description": "A Hex rooting its power on hope. The false hope of Survivors ignites your hunger.When a Survivor is rescued from a hook at least 24 meters away, Devour Hope receives a token.2 Tokens: Gain a 3/4/5% Haste status effect, 10 seconds after hooking a Survivor, for a duration of 10 seconds.3 Tokens: Survivors suffer from the Exposed status effect.5 Tokens: Grants the ability to kill Survivors by your own hand.The Hex effects persist as long as the related Hex Totem is standing.Exposed Survivors will be downed by basic attacks even if uninjured.Haste increases Killer movement speed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“If you do nothing, you have their blood on your hands. If you save them, her hunger grows.“"
   },
   {
@@ -1136,7 +1136,7 @@
     "rank": 50,
     "character": "The Huntress",
     "description": "A Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention.Survivors receive a 2/4/6% regression penalty when missing a Skill Check while healing or repairing.Each time a Survivor is hooked, Huntress Lullaby grows in power. It affects healing and repairing Skill Check warnings:1 to 4 Tokens: Time between the Skill Check warning sound and the Skill Check becomes shorter.5 Tokens: No Skill Check warning.The Hex effects persist as long as the related Hex Totem is standing.",
-    "tags": [],
+    "tags": ["skill check", "hook"],
     "flavorText": ""
   },
   {
@@ -1144,7 +1144,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/af/IconPerks_hexNoOneEscapesDeath.png",
     "rank": 11,
-    "character": "",
+    "character": "General Killer",
     "description": "A Hex rooting its power on hope. You are animated by the power of your Hex Totem when the Survivors are on the verge of escaping.Once the exit gates are powered, if there is a Dull Totem remaining on the map, this Hex is applied to it.While this Hex is active,Survivors suffer from the Exposed status effect.Your movement speed is increased by 2/3/4%.Once the Hex's effect is revealed to the Survivors, its Hex Totem's aura is shown to the Survivors at a range of 4 meters. This range increases steadily over the next 30 seconds to 24 meters.The Hex effects persist as long as the related Hex Totem is standing.Exposed Survivors will be downed by basic attacks even if uninjured.",
     "tags": ["aura"],
     "flavorText": "\"And the beast became faster and more powerful as if The Entity's shadowy whips were lashing at its back.\""
@@ -1166,7 +1166,7 @@
     "rank": 19,
     "character": "The Cenobite",
     "description": "A Hex that toys with a victim's suffering.The first time you hook a Survivor, they become Cursed and Hex: Plaything activates on a Dull Totem. The Cursed Survivor suffers from the Oblivious status effect until Hex: Plaything is cleansed.Hex: Plaything's totem aura is revealed to the Cursed Survivor when within 24/20/16 meters of it. For the first 90 seconds, only the Cursed Survivor can cleanse the totem.Oblivious prevents Survivors from hearing or being affected by the Killer's Terror Radius.",
-    "tags": ["aura", "hook a Survivor"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"We came. Now you must come with us. Taste our pleasures.\" —Pinhead"
   },
   {
@@ -1204,7 +1204,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/02/IconPerks_hexThrillOfTheHunt.png",
     "rank": 60,
-    "character": "",
+    "character": "General Killer",
     "description": "A Hex rooting its power on hope. The false hope of Survivors fills you with excitement and strengthens your Totems.For each Dull and Hex Totem remaining on the map gain a token. Gain 10% more Bloodpoints for actions in the Hunter category for each token.Survivors' cleansing and blessing speed is reduced by 8/9/10% for each token.The Hex effects persist as long as the related Hex Totem is standing.",
     "tags": [],
     "flavorText": ""
@@ -1254,7 +1254,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/18/IconPerks_hope.png",
     "rank": 21,
-    "character": "",
+    "character": "General Survivor",
     "description": "The growing odds of a successful escape fill you with hope and give you wings. As soon as the exit gates are powered you gain a 5/6/7% Haste status effect.Haste increases Survivor movement speed.",
     "tags": [],
     "flavorText": "\"Buckle up, fuckos! Let's roll!\" -Lost Tapes: Nikki"
@@ -1286,7 +1286,7 @@
     "rank": 51,
     "character": "Rebecca Chambers",
     "description": "You throw yourself entirely into your tasks and find ways to be more efficient than anyone else.After hitting a great Skill Check while repairing or healing, this perk gains 1 token, up to 6 tokens. Each token increases the chance of Skill Check trigger by 4%, the Skill Check cursor speed by 4% and the bonus progression for great Skill Checks by 10/20/30% of its base value.The perk loses all tokens in case of normal Skill Check successes, Skill Check fails, or if the action is stopped by any means.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": ""
   },
   {
@@ -1344,7 +1344,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/4/40/IconPerks_insidious.png",
     "rank": 58,
-    "character": "",
+    "character": "General Killer",
     "description": "Unlocks the stealth ability.Standing still for 4/3/2 seconds grants you the Undetectable status effect until you move or act again.Undetectable hides the Killer's aura, Terror Radius, and Red Stain.",
     "tags": ["aura"],
     "flavorText": ""
@@ -1364,7 +1364,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/14/IconPerks_ironGrasp.png",
     "rank": 29,
-    "character": "",
+    "character": "General Killer",
     "description": "Your powerful hold on the Survivors causes escapes to be nearly impossible.Effects of Survivor struggling are reduced by 75%. Time to struggle out of your grasp is increased by 4/8/12%.",
     "tags": [],
     "flavorText": ""
@@ -1394,9 +1394,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a8/IconPerks_kindred.png",
     "rank": 17,
-    "character": "",
+    "character": "General Survivor",
     "description": "Unlocks potential in one's aura reading ability. While you are on the hook, all Survivor's auras are revealed to all other Survivors. If The Killer is within a 8/12/16 meter range, The Killer's aura is revealed to you and all other Survivors.While a Survivor other than you is on the hook, all other Survivors' auras are revealed to you. If The Killer is within a 8/12/16 meter range of the hooked Survivor, The Killer's aura is revealed to you.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“Be kind to one another. We're all in this together.” -Lost Tapes: Sujan"
   },
   {
@@ -1426,7 +1426,7 @@
     "rank": 72,
     "character": "Dwight Fairfield",
     "description": "You're able to organize a team to cooperate more efficiently. Increases other Survivors' healing, sabotage, unhooking, cleansing, opening Exit Gates, and chest unlocking speeds by 15/20/25% when they are within a 8 meter range from you.Survivors can only be affected by one Leader effect at a time.This effect persists on other Survivors for 15 seconds after leaving the Leader's effective perk range.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": ""
   },
   {
@@ -1456,7 +1456,7 @@
     "rank": 84,
     "character": "The Skull Merchant",
     "description": "Like in business, you profit most when those around you suffer most. Each time you hook a Survivor, gain 1 token, up to 10.When you hook a Survivor, this perk activates for 30 seconds. For each token, reduces the speed at which Survivors heal by 3/4/5%.",
-    "tags": ["hook a Survivor"],
+    "tags": ["hook"],
     "flavorText": "“The best way to raise profit is to cut expenditures. Cut everything.” – Adriana Imai"
   },
   {
@@ -1484,7 +1484,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/6/67/IconPerks_lightweight.png",
     "rank": 25,
-    "character": "",
+    "character": "General Survivor",
     "description": "Your running is light and soft, making your tracks harder to follow. Scratch marks stay visible 3/4/5 seconds less than normal, and their spacing is inconsistent.",
     "tags": [],
     "flavorText": "\"Take it slow, he knows where you've been… just like I've always said: live slow and die old.\" -Lost Tapes: Dylan"
@@ -1566,7 +1566,7 @@
     "rank": 55,
     "character": "The Pig",
     "description": "When a Survivor rescues another from a hook at least 32 meters away from you, Make your Choice causes the Survivor to scream and applies the Exposed status effect to them for 40/50/60 seconds.Make your Choice has a cooldown of 40/50/60 seconds.Exposed Survivors will be downed by basic attacks even if uninjured.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"You'd be surprised what tools can save a life.\" -Amanda Young"
   },
   {
@@ -1576,7 +1576,7 @@
     "rank": 48,
     "character": "The Onryō",
     "description": "Your horrible trauma is felt by everyone.When a generator reaches 90% progress, Survivors working on the generator will be faced with continuous Skill Checks. If they miss or stop repairing, the generator is blocked by the Entity for 16/18/20 seconds.Merciless Storm can only trigger once per generator per trial.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": ""
   },
   {
@@ -1654,9 +1654,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b0/IconPerks_noOneLeftBehind.png",
     "rank": 76,
-    "character": "",
+    "character": "General Survivor",
     "description": "It is inconceivable to leave someone behind. Once the exit gates are powered, you gain the following effects:50/75/100% additional Bloodpoints for healing and unhooking other Survivors.30/40/50% bonus action speed when healing and unhooking other Survivors.When unhooking a Survivor, they gain a 7% movement bonus for 10 seconds.The auras of all other Survivors are revealed to you.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"...yeah, no shit. But I believe we can outsmart and overthrow him if we work together. Don't be predictable and selfish!\" -Lost Tapes: Clyde"
   },
   {
@@ -1666,7 +1666,7 @@
     "rank": 15,
     "character": "The Trickster",
     "description": "You're not going to let just anyone into the VIP room.After hooking a Survivor for the first time, No Way Out gains a token. Once the exit gates have been powered, No Way Out activates. When a Survivor interacts with an exit gate switch, you receive a loud noise notification. The Entity then blocks both exit gate switches for 12 seconds, plus an additional 6/9/12 seconds for each token in your possession.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"That sound when you bleed...let me hear it again.\" — Ji-Woon Hak"
   },
   {
@@ -1696,7 +1696,7 @@
     "rank": 19,
     "character": "Zarina Kassir",
     "description": "You've learned that a quiet approach is sometimes best. Once you are unhooked or escape from the hook, Off the Record activates for 60/70/80 seconds. This perk and its effects are disabled once the exit gates are powered. While Off the Record is active:Your aura will not be shown to The Killer.Grunts of pain caused by injuries are reduced by 100%.Gain the Endurance status effect.Endurance prevents a survivor from being downed, inflicting Deep Wound instead.Deep Wound will put a Survivor in the dying state unless it is mended before the timer runs out.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"Trust me, I investigate thoroughly and discreetly.\" -Zarina Kassir"
   },
   {
@@ -1716,7 +1716,7 @@
     "rank": 31,
     "character": "The Twins",
     "description": "Life has been difficult for you, so you'll make it difficult for others.When you damage a generator, up to 3 other random generators also begin regressing.If the affected generators are being repaired, any Survivors repairing them receive a difficult Skill Check.Oppression has a cooldown of 60/50/40 seconds. ",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "\"Damn them as they would damn us.\" —Charlotte Deshayes"
   },
   {
@@ -1726,7 +1726,7 @@
     "rank": 36,
     "character": "The Doctor",
     "description": "You are fuelled by your hate for progress.Overcharge a generator by performing the Damage Generator action. The next Survivor interacting with that generator is faced with a difficult Skill Check. Failing the Skill Check results in an additional 2/3/4% loss of progress.Succeeding the Skill Check grants no progress but prevents the generator explosion.After Overcharge is applied to a generator, its regression speed increases from 85% of normal to 130% of normal over the next 30 seconds.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "\"It is a trap. But a trap one must step in…\" -The Doctor"
   },
   {
@@ -1804,7 +1804,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/2/28/IconPerks_plunderersInstinct.png",
     "rank": 67,
-    "character": "",
+    "character": "General Survivor",
     "description": "Unlocks potential in one's aura reading ability. The auras of unopened chests and items in the environment are revealed to you when standing within a 16/24/32 meter range. Grants a considerably better chance at finding an item of higher rarity from chests.",
     "tags": ["aura"],
     "flavorText": "\"The pioneers used to loot these babies for hours.\" -Lost Tapes: Aizeyu"
@@ -1826,7 +1826,7 @@
     "rank": 2,
     "character": "The Clown",
     "description": "A deep bond with The Entity unlocks great strength. After hooking a Survivor, the next generator you damage instantly loses 20% of its current progress. Normal generator regression applies after the Damage Generator action.Pop Goes the Weasel is active for 35/40/45 seconds after the Survivor is hooked.",
-    "tags": ["generator"],
+    "tags": ["generator", "hook"],
     "flavorText": ""
   },
   {
@@ -1836,7 +1836,7 @@
     "rank": 88,
     "character": "Vittorio Toscano",
     "description": "Your arcane abilities have adapted to The Entity's Realm after centuries of wandering, granting you unprecedented control over its many devices.After working on a generator for 12/10/8 uninterrupted seconds, press the Active Ability Button 2 to activate this perk. When this perk is active, repairing the generator will charge this perk instead of making the generator progress. For each 1.5% of generator repair, the perk will gain 1 token, up to 20 tokens.While this perk has at least one token and you are working on a generator, you can press the Active Ability Button 2 to consume all the tokens and instantly make the generator progress by 1% for each token. This perk then deactivates.If you lose a health state while this perk has at least 1 token, the perk will lose all tokens and deactivate. Missing a Skill Check will also result in some tokens lost.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "\"When you look a layer deeper, you realize… everything is connected.\" -  Vittorio Toscano"
   },
   {
@@ -1864,7 +1864,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/39/IconPerks_premonition.png",
     "rank": 85,
-    "character": "",
+    "character": "General Survivor",
     "description": "You have the undeniable capability to sense danger. Get an auditory warning when looking in the direction of the Killer in a 45 degree cone within a range of 36 meters. Premonition has a cooldown of 60/45/30 seconds each time it activates.",
     "tags": [],
     "flavorText": "\"I have a bad feeling about this!\""
@@ -1892,7 +1892,7 @@
   {
     "name": "Quick Gambit",
     "role": "Survivor",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f7/IconPerks_quickGambit.png",
     "rank": 102,
     "character": "Vittorio Toscano",
     "description": "When you have a Killer's attention, you know how to keep it; others can be confident they won't be interrupted any time soon.When you are chased by the Killer, see the auras of generators within 36 meters.Survivors working on highlighted generators receive a 6/7/8% speed boost to the repair action.",
@@ -1902,7 +1902,7 @@
   {
     "name": "Rancor",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_rancor.png",
     "rank": 51,
     "character": "The Spirit",
     "description": "You become obsessed with one Survivor.Each time a generator is completed, your Obsession sees your aura for  5/4/3 seconds.Each time a generator is completed, all Survivors' locations are revealed to you for  3 seconds.Once the exit gates are powered, the Obsession has the Exposed status effect and you can kill them.The Killer can only be obsessed with one Survivor at a time.Exposed Survivors will be downed by basic attacks even if uninjured.",
@@ -1936,7 +1936,7 @@
     "rank": 49,
     "character": "Rebecca Chambers",
     "description": "Your presence helps allies focus, assuaging the panic associated with extreme conditions.When within a 6-meter radius around a hooked Survivor, use the Active Ability Button 2 to pause their struggle progression for 20/25/30 seconds.If they are on the struggle phase, it also pauses the Struggle Skill Checks.Reassurance can only be triggered once per survivor per hook instance.",
-    "tags": [],
+    "tags": ["skill check", "hook"],
     "flavorText": ""
   },
   {
@@ -1984,9 +1984,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_resilience.png",
     "rank": 3,
-    "character": "",
+    "character": "General Survivor",
     "description": "You are motivated in dire situations. Grants 3/6/9% additional speed when repairing, sabotaging, healing, unhooking, vaulting, cleansing or blessing a Totem, opening exit gates, and unlocking while injured.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"Focus, even in these desperate times.\""
   },
   {
@@ -1996,7 +1996,7 @@
     "rank": 38,
     "character": "Jill Valentine",
     "description": "You've come back from near impossible odds... and you'll do it again.Gain 50/60/70% healing progress instantly after being unhooked or unhooking yourself.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"It's my turn, bitch.\" —Jill Valentine"
   },
   {
@@ -2006,7 +2006,7 @@
     "rank": 106,
     "character": "Leon S. Kennedy",
     "description": "You keep a careful eye on objectives when they're slipping away.Complete 5/4/3 good or great Skill Checks while repairing generators to activate Rookie Spirit for the remainder of the trial.Once active, you can see the aura of regressing generators.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "skill check"],
     "flavorText": "\"I'll stop this, lieutenant. I promise.\" —Leon S. Kennedy"
   },
   {
@@ -2016,7 +2016,7 @@
     "rank": 34,
     "character": "Jake Park",
     "description": "Unlocks potential in one's aura reading ability.See hook auras in a 56 meter radius from the pickup spot if another Survivor is being carried. Scourge Hooks are shown in yellow.Unlocks the ability to sabotage hooks without a Toolbox.Sabotaging a hook without a Toolbox takes 2.3 seconds.The sabotage action has a 70/65/60 second cooldown.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": ""
   },
   {
@@ -2052,11 +2052,11 @@
   {
     "name": "Scourge Hook: Floods of Rage",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/1/1c/IconPerks_scourgeHookFloodsOfRage.png",
     "rank": 34,
     "character": "The Onryō",
     "description": "You form a psychic connection with The Entity and alter the rules of the trial.At the start of the trial, 4 random hooks are changed into scourge hooks. You see their auras in white.When a Survivor is unhooked from a scourge hook, all other Survivors have their auras revealed for 5/6/7 seconds.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": ""
   },
   {
@@ -2066,37 +2066,37 @@
     "rank": 53,
     "character": "The Cenobite",
     "description": "You are the bringer of sweet pain.At the start of the trial, 4 random hooks are changed into scourge hooks. You see their auras in white.When a Survivor is unhooked from a scourge hook, they suffer from the Hemorrhage and Mangled status effect for 90 seconds. The first time the Survivor is healed, they suffer a 10/13/16% speed penalty to healing and repairing actions until injured again.Hemorrhage regresses healing progress when not healing, and increases blood trails left by injured survivors. This lasts for a set duration or until fully healed.Mangled increases time required to heal by 25% and lasts for a set duration or until fully healed.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"We'll tear your soul apart.\" —Pinhead"
   },
   {
     "name": "Scourge Hook: Hangman's Trick",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/9a/IconPerks_scourgeHookHangmansTrick.png",
     "rank": 81,
     "character": "The Pig",
     "description": "Your ingenious modifications to hooks alert you of tampering.At the start of the trial, 4 random hooks are changed into scourge hooks. You see their auras in white.Gain a notification when a Survivor begins sabotaging a hook.While carrying a Survivor, see the aura of any Survivor within 8/10/12 meters of a scourge hook.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"No excuses, no equivocations… No crying.\" -Amanda Young"
   },
   {
     "name": "Scourge Hook: Monstrous Shrine",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/9/91/IconPerks_scourgeHookMonstrousShrine.png",
     "rank": 59,
-    "character": "",
+    "character": "General Killer",
     "description": "Your fervent care of the hooks found in the basement have aroused The Entity's interest.At the start of the trial, 4 random hooks are changed into scourge hooks. You see their auras in white.Scourge Hooks grant 10/15/20% faster Entity progression if the Killer is not within 24 meters.Basement hooks count as Scourge Hooks.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "\"Then you will know that there is no escape. When hanging in the depths, you face the dark one.\""
   },
   {
     "name": "Scourge Hook: Pain Resonance",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/79/IconPerks_scourgeHookPainResonance.png",
     "rank": 1,
     "character": "The Artist",
     "description": "Overwhelming pain reverberates outwards into chaos.At the start of the trial, 4 random hooks are changed into scourge hooks. You see their auras in white.You start the Trial with 4 tokens, 1 for each Survivor. If a generator is available when that Survivor is hooked on a scourge hook, lose 1 token. The generator with the most progress explodes, instantly losing 10/15/20% progress, and will start to regress.Once you have no tokens, Pain Resonance deactivates for the rest of the Trial.",
-    "tags": ["generator", "aura"],
+    "tags": ["generator", "aura", "hook"],
     "flavorText": "\"The pain spills beyond flesh/darkness staining the horizon.\" —Girl in the Shadow by Carmina Mora"
   },
   {
@@ -2106,13 +2106,13 @@
     "rank": 75,
     "character": "Steve Harrington",
     "description": "When you have healed other Survivors for the equivalent of one health state, Second Wind activates. If you are already afflicted by the Broken status effect, Second Wind does not activate.While Second Wind is activated, the next time you are unhooked or you unhook yourself, you are affected by the Broken status effect. After a total duration of 28/24/20 seconds, Second Wind automatically heals you from injured to healthy.Second Wind deactivates once you become healthy or if you are put into the dying state before Second Wind successfully triggers. You lose the Broken status effect.Broken prevents Survivors from being healed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"Yeah, that's a no.\" -Steve Harrington"
   },
   {
     "name": "Self-Care",
     "role": "Survivor",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b2/IconPerks_self-Care.png",
     "rank": 18,
     "character": "Claudette Morel",
     "description": "Unlocks the Self Care ability, which allows you to heal without a Med-kit at 25/30/35% normal healing speed.",
@@ -2152,9 +2152,9 @@
   {
     "name": "Shattered Hope",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/aa/IconPerks_shatteredHope.png",
     "rank": 82,
-    "character": "",
+    "character": "General Killer",
     "description": "To capture your prey, you must first extinguish their hope.Whenever you snuff a Boon Totem, the totem is destroyed instead.When you destroy a Boon Totem this way, the auras of all Survivors inside the Boon Totem range are revealed to you for 6/7/8 seconds.",
     "tags": ["aura"],
     "flavorText": "\"Nothing is permanent here. Nothing except our endless perdition.\" -Unknown, Notebook"
@@ -2164,9 +2164,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/0/03/IconPerks_slipperyMeat.png",
     "rank": 79,
-    "character": "",
+    "character": "General Survivor",
     "description": "You have developed an efficient way to get off hooks.Grants up to 3 extra escape attempts on the hook.Hook escape attempts have a 2/3/4% increased chance to succeed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": ""
   },
   {
@@ -2174,7 +2174,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/5a/IconPerks_sloppyButcher.png",
     "rank": 10,
-    "character": "",
+    "character": "General Killer",
     "description": "You know where to hit to make them bleed.Wounds inflicted by basic attacks cause Survivors to suffer from the Hemorrhage and Mangled status effects for 70/80/90 seconds.Increases the rate at which healing progression is lost from Hemorrhage by 25%.Hemorrhage regresses healing progress when not healing, and increases blood trails left by injured survivors. This lasts for a set duration or until fully healed.Mangled increases time required to heal by 25% and lasts for a set duration or until fully healed.",
     "tags": [],
     "flavorText": "\"It's in its sadistic nature. There is no swift kill as it delights in the obscene spectacle of our agonizing suffering.\""
@@ -2184,7 +2184,7 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/d/dc/IconPerks_smallGame.png",
     "rank": 77,
-    "character": "",
+    "character": "General Survivor",
     "description": "You have the undeniable capability to sense danger. Get an auditory warning when looking in the direction of Totems in a 45-degree cone within a range of 8/10/12 meters. Small Game has a cooldown of 14/12/10 seconds each time it activates. For each Dull Totem and Hex Totem cleansed by any player, gain a Token. Small Game's detection cone is reduced by 5 degrees per token.",
     "tags": [],
     "flavorText": "\"Nope.\" -Lost Tapes: Andy"
@@ -2232,11 +2232,11 @@
   {
     "name": "Specialist",
     "role": "Survivor",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/ae/IconPerks_specialist.png",
     "rank": 72,
     "character": "Lara Croft",
     "description": "Each time you open or rummage through a chest, gain 1 token, up to 6.When you perform a great Skill Check on a generator, consume all tokens. Then, for each token consumed, reduce the maximum required generator progress by 2/3/4.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "Adventure. Exploration. Excavation. You are in your element.\"Well, then. Doesn't this feel familiar?\" - Lara Croft"
   },
   {
@@ -2244,7 +2244,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/b1/IconPerks_spiesFromTheShadows.png",
     "rank": 30,
-    "character": "",
+    "character": "General Killer",
     "description": "The crows found in the world can communicate with you directly.100% of the time, cawing crows give you a visual cue when you are within a 20/28/36 meter range.Spies From The Shadows has a cooldown of 5 seconds.",
     "tags": [],
     "flavorText": "\"In the shadows they torment, scarring our minds with each scream.\""
@@ -2254,9 +2254,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_spineChill.png",
     "rank": 39,
-    "character": "",
+    "character": "General Survivor",
     "description": "An unnatural tingle warns you of impending doom.Get notified when the Killer is looking at you with a clear line of sight within a 36-meter range. Your speed while repairing, sabotaging, healing, unhooking, cleansing, blessing, opening exit gates and unlocking is increased by 2/4/6%.The effects of Spine Chill linger for 0.5 seconds after the Killer looks away or is out of range.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": ""
   },
   {
@@ -2286,7 +2286,7 @@
     "rank": 50,
     "character": "Detective Tapp",
     "description": "Getting close to the Killer fills you with determination. For each 15 seconds you are standing within the Killer Terror Radius and not in a chase, you gain a Token up to a maximum of 2/3/4 Tokens.When Stake Out has at least 1 Token, Good Skill Checks are considered Great Skill Checks, consume 1 Token, and grant an additional 1% bonus to generator repair progress.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "\"I had you, I had you on your knees. You're runnin' scared because we had you. We're gonna close this case!\" -Detective David Tapp"
   },
   {
@@ -2296,7 +2296,7 @@
     "rank": 54,
     "character": "The Trickster",
     "description": "Your unmatched showmanship dazzles all.While carrying a Survivor, any other Survivors within your Terror Radius suffer from the Exposed status effect.The effect persists for 26/28/30 seconds on Survivors who leave your Terror Radius, as well as those within the radius when you hook or release the carried Survivor.Starstruck has a cooldown of 60 seconds once a Survivor is no longer carried.Exposed Survivors will be downed by basic attacks even if uninjured.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"Enjoy this moment, few get so close.\" — Ji-Woon Hak"
   },
   {
@@ -2396,7 +2396,7 @@
     "rank": 62,
     "character": "Feng Min",
     "description": "You are apt at handling machinery with the greatest care and precision.The noises caused by your repairs and their hearing distance are reduced by 8 meters.On a failed repair Skill Check, the following effects happen:The generator explosion will be prevented.The generator loses progress as usual.An additional 5/4/3% progress is lost.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "“I'm gonna stealth this one.” -Feng Min"
   },
   {
@@ -2416,7 +2416,7 @@
     "rank": 70,
     "character": "The Mastermind",
     "description": "You are a brilliant tactician who prepares for every eventuality.When exit gates are powered, this perk activates. While Terminus is active, injured, downed and hooked Survivors are inflicted with the Broken status effect until exit gates are open.When exit gates are open, Survivors will stay Broken for an additional 20/25/30 seconds.Broken prevents Survivors from being healed.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": ""
   },
   {
@@ -2432,11 +2432,11 @@
   {
     "name": "Thanatophobia",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/a/a2/IconPerks_thanatophobia.png",
     "rank": 28,
     "character": "The Nurse",
     "description": "Their courage fades in the face of undeniable mortality.For each injured, dying, or hooked Survivor, all Survivors receive a penalty of 1/1.5/2% to repair, sabotage and Totem-cleansing speeds.If there are 4 injured, dying or hooked Survivors, there is an additional 12% penalty to repair, sabotage and Totem-cleansing speeds.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"She plays with us and revels in our pain.\""
   },
   {
@@ -2444,9 +2444,9 @@
     "role": "Survivor",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/58/IconPerks_thisIsNotHappening.png",
     "rank": 79,
-    "character": "",
+    "character": "General Survivor",
     "description": "You perform at your best when you are under extreme stress. Great Skill Check success zones when repairing and healing get 10/20/30% bigger when you are injured.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": ""
   },
   {
@@ -2466,7 +2466,7 @@
     "rank": 78,
     "character": "The Skull Merchant",
     "description": "Your prey is terrified by your relentless pursuit.After hooking a Survivor, this perk activates.The next breakable wall or pallet you break will make Survivors within 28/30/32 meters scream and reveal their aura for 4 seconds.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "“All those who stood in her path feared her mighty THWACK!” –Sonhadores Sombrios, Issue #3"
   },
   {
@@ -2496,7 +2496,7 @@
     "rank": 93,
     "character": "Gabriel Soma",
     "description": "No amount of distraction will shake you from your primary task.When you are chased by the Killer, Troubleshooter activates.You see the aura of the Generator with the most progress.You see the aura of the Killer for 4/5/6 seconds after dropping a Pallet.The effect lasts for 6/8/10 seconds after being in chase, then deactivates.",
-    "tags": ["aura"],
+    "tags": ["generator", "aura"],
     "flavorText": "“Nothing gets done around here if I don't do it.” –Gabriel Soma"
   },
   {
@@ -2536,7 +2536,7 @@
     "rank": 84,
     "character": "The Unknown",
     "description": "When a Survivor misses a healing or repair Skill Check, gain 3 tokens, up to 18/24/30.When you perform the break action on a generator, if you have any tokens, consume all of them. For each token consumed, the generator loses 1% total progress and then becomes blocked for 1 second. Then, once the generator is unblocked, it starts regressing.This perk goes on cooldown for 60 seconds.",
-    "tags": ["generator"],
+    "tags": ["generator", "skill check"],
     "flavorText": "Hope is the delusion that keeps its victims alive.\"Erratic behavior in machinery could be related to [REDACTED], further testing required.” - OSS Report, 12/02/1943 "
   },
   {
@@ -2556,15 +2556,15 @@
     "rank": 56,
     "character": "The Trapper",
     "description": "Your presence alone instills great fear.Survivors within your Terror Radius have a 10% greater chance of triggering Skill Checks when repairing or healing. Triggered Skill Checks' success zones are reduced by 40/50/60%.",
-    "tags": [],
+    "tags": ["skill check"],
     "flavorText": "\"Its presence befalls us.\""
   },
   {
     "name": "Unrelenting",
     "role": "Killer",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/5/57/IconPerks_unrelenting.png",
     "rank": 46,
-    "character": "",
+    "character": "General Killer",
     "description": "You recuperate faster from missed attacks made with your main weapon. The cooldown after missed basic attacks is reduced by 20/25/30%.",
     "tags": [],
     "flavorText": ""
@@ -2622,11 +2622,11 @@
   {
     "name": "We'll Make It",
     "role": "Survivor",
-    "img": "https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974",
+    "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/8/8a/IconPerks_wellMakeIt.png",
     "rank": 15,
-    "character": "",
+    "character": "General Survivor",
     "description": "Helping others heightens your morale.When you rescue a Survivor from a hook, gain a 100% speed increase while healing others for 30/60/90 seconds.",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "\"I'm confident we can all escape in one piece if we help each other.\""
   },
   {
@@ -2636,7 +2636,7 @@
     "rank": 78,
     "character": "David King",
     "description": "Your few friends deserve the best protection.When healing another Survivor in the dying state, your healing speed is increased by 100%.Additionally, performing any of the following actions activates this perk's secondary function:Perform a Safe Hook RescueTake a hit to protect a SurvivorRescue a Survivor by stunning the Killer with a palletRescue a Survivor by blinding the KillerWhen this perk's secondary function is active, healing another Survivor out of the dying state grants them Endurance for 6/8/10 seconds and deactivates the secondary function.Endurance prevents a Survivor from being downed, inflicting Deep Wound instead.Deep Wound will put a Survivor in the dying state unless it is mended before the timer runs out. ",
-    "tags": [],
+    "tags": ["hook"],
     "flavorText": "“Come on then, let's ‘ave it! I don't give a shit pal.” -David King"
   },
   {
@@ -2654,7 +2654,7 @@
     "role": "Killer",
     "img": "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bb/IconPerks_whispers.png",
     "rank": 65,
-    "character": "",
+    "character": "General Killer",
     "description": "You have a rudimentary understanding of The Entity's voice.Sporadically hear The Entity's whisper when standing within a 48/40/32 meter range of a Survivor.",
     "tags": [],
     "flavorText": "\"It's unclear as to the motivations of The Fog, but it is undeniable that it often takes the beast's side.\" -Notebook"
@@ -2666,7 +2666,7 @@
     "rank": 66,
     "character": "Sable Ward",
     "description": "Your self-unhook attempts in the basement always succeed.When you are unhooked or unhook yourself, you see the Killer's aura for 16/18/20 seconds.",
-    "tags": ["aura"],
+    "tags": ["aura", "hook"],
     "flavorText": "They can try to hurt you. But you're not going down so easily.“I haven't let anyone get in my way before. You think I'm gonna start now?” - Sable "
   },
   {

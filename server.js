@@ -74,17 +74,19 @@ app.get("/generate", async (req, res) => {
         delete perk.id;
         delete perk.tier;
         perk.tags = [];
+        if (perk.character == "") {
+          perk.character = "General "+perk.role
+        }
         const $ = cheerio.load(perk.description);
         perk.flavorText = $('.FlavorText').text()
         $('.FlavorText').remove()
         perk.description = $.text();
         tags.forEach((tag) => {
-          if (perk.description.toLowerCase().indexOf(tag) > -1) {
+          if (perk.description.toLowerCase().replace(/\s/g, "").indexOf(tag.toLowerCase().replace(/\s/g, "")) > -1) {
             perk.tags.push(tag);
           }
         });
       });
-      console.log(notFound + " images not found!");
       res.type("application/json").json(perkData);
     } catch (parseErr) {
       console.log(parseErr);

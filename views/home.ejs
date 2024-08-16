@@ -78,11 +78,7 @@
          }
        }
       function hasCommon(arr1, arr2) {
-        if ((arr1).length ==0) {
-          return true
-        } 
-        const set = new Set(arr1);
-        return arr2.some(element => set.has(element));
+        return arr1.every(element => arr2.includes(element));
       }
       function updateFilter() {
         const perks = document.querySelectorAll('[data-name]');

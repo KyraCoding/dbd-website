@@ -29,10 +29,9 @@
         A Dead By Daylight buildcrafting tool by KyraCoding
       </div>
     </div>
-    
     <div id="perksList" class="flex flex-col items-center gap-3 p-6">
-      <h1 class="flex text-xl font-bold">
-        Search for perks:
+      <h1 id="perkCount" class="flex text-xl font-bold">
+        Search for perks: (<%= data.length+" perks found"%>)
       </h1>
       <input id="search" class="flex w-1/2 p-3 justify-center text-black">
       <% data.forEach((perk) => { %>
@@ -61,15 +60,25 @@
       <% }) %>
     </div>
     <script>
+      function adjustPlurality(inp) {
+         if (inp == 1) {
+           return ""
+         } else {
+           return "s" 
+         }
+       }
       document.getElementById("search").addEventListener("input", event => {
         const perks = document.querySelectorAll('[data-name]');
+        var counter = 0
         perks.forEach((perk) => {
           if (perk.dataset.name.toLowerCase().indexOf(event.target.value.toLowerCase()) > -1) {
             perk.classList.remove("hidden")
+            counter++
           } else {
             perk.classList.add("hidden")
           }
         })
+        document.getElementById("perkCount").innerHTML = "Search for perks: ("+counter+" perk"+adjustPlurality(counter)+" found)"
       })
     </script>
   </body>

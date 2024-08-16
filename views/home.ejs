@@ -33,9 +33,16 @@
       <h1 id="perkCount" class="flex text-xl font-bold">
         Search for perks: (<%= data.length+" perks found"%>)
       </h1>
-      <input id="search" class="flex w-1/2 p-3 justify-center text-black">
+      <input id="search" class="flex w-1/2 p-3 justify-center text-black rounded">
+      <div class="flex p-3 justify-center gap-6 rounded bg-slate-600">
+        <% tags.forEach((tag) => { %>
+          <div class="flex bg-rose-400 rounded p-2 cursor-pointer hover:bg-rose-500" onclick=tagClick(this)>
+            <%= tag %>
+          </div>
+        <% }) %>
+      </div>
       <% data.forEach((perk) => { %>
-        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>">
+        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>" data-tags="<%= perk.tags %>">
           <div class="flex flex-col bg-purple-950 w-1/3 p-3">
             <img src=<%= perk.img %> class="flex justify-self-center w-full">
           </div>
@@ -46,7 +53,8 @@
             </div>
             <div class="flex flex-col p-3 border-b">
               <div class="flex text-white text-lg"><%= perk.description %></div>
-                <div class="flex text-white text-lg"><%= perk.flavorText %></div>
+              <br>
+              <div class="flex text-white text-lg italic"><%= perk.flavorText %></div>
             </div>
             <div class="flex flex-row w-full h-fit p-3 gap-6 flex-wrap text-sm font-bold">
               <% perk.tags.forEach((tag) => { %>
@@ -60,6 +68,8 @@
       <% }) %>
     </div>
     <script>
+      var currentQuery = ""
+      var currentTags = []
       function adjustPlurality(inp) {
          if (inp == 1) {
            return ""
@@ -70,8 +80,9 @@
       document.getElementById("search").addEventListener("input", event => {
         const perks = document.querySelectorAll('[data-name]');
         var counter = 0
+        currentQuery = event.target.value
         perks.forEach((perk) => {
-          if (perk.dataset.name.toLowerCase().indexOf(event.target.value.toLowerCase()) > -1) {
+          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1) {
             perk.classList.remove("hidden")
             counter++
           } else {
@@ -80,6 +91,14 @@
         })
         document.getElementById("perkCount").innerHTML = "Search for perks: ("+counter+" perk"+adjustPlurality(counter)+" found)"
       })
+      function tagClick(element) {
+        var tagName = element.innerHTML 
+        if (currentTags.includes(tagName)) {
+          currentTags.filter(item => item !== tagName)
+        } else {
+          currentTags.push(tagName)
+        }
+      }
     </script>
   </body>
 </html>

@@ -9,6 +9,8 @@ app.set('view engine', 'ejs')
 
 const port = 3000;
 
+const tags = ["generator", "aura", "skill check", "hook"]
+
 app.get("/", (req, res) => {
   const filePath = path.join(__dirname, "data", "generated.json");
   fs.readFile(filePath, "utf8", (err,data) => {
@@ -18,7 +20,8 @@ app.get("/", (req, res) => {
     try {
       data = JSON.parse(data)
       res.render('home', {
-        data: data
+        data: data,
+        tags: tags
       })
     } catch (err) {
       console.log(err)
@@ -39,7 +42,6 @@ app.get("/generate", async (req, res) => {
       const rawData = JSON.parse(data);
       const perkData = rawData.perks;
       const imageData = rawData.images;
-      const tags = ["generator", "aura", "skill check", "hook a Survivor"];
       var notFound = 0;
       perkData.forEach((perk) => {
         let change = false;

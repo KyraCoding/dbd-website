@@ -39,7 +39,7 @@ app.get("/generate", async (req, res) => {
       const rawData = JSON.parse(data);
       const perkData = rawData.perks;
       const imageData = rawData.images;
-      const tags = ["generator", "aura"];
+      const tags = ["generator", "aura", "skill check", "hook a Survivor"];
       var notFound = 0;
       perkData.forEach((perk) => {
         let change = false;
@@ -73,6 +73,8 @@ app.get("/generate", async (req, res) => {
         delete perk.tier;
         perk.tags = [];
         const $ = cheerio.load(perk.description);
+        perk.flavorText = $('.FlavorText').text()
+        $('.FlavorText').remove()
         perk.description = $.text();
         tags.forEach((tag) => {
           if (perk.description.indexOf(tag) > -1) {

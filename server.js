@@ -5,13 +5,29 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
+app.set('view engine', 'ejs')
+
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/pages/home.html");
+  const filePath = path.join(__dirname, "data", "generated.json");
+  fs.readFile(filePath, "utf8", (err,data) => {
+    if (err) {
+      //return res.status(500).json({error: "Failed to read file"})
+    }
+    try {
+      res.render('home', {
+        data: data
+      })
+    } catch (err) {
+      console.log(err)
+      //return res.status(500).json({error: "Failed to render"})
+    }
+  })
+  res.render('home.ejs')
 });
 
-app.get("/api", async (req, res) => {
+app.get("/generate", async (req, res) => {
   const filePath = path.join(__dirname, "data", "perks.json");
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {

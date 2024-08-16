@@ -13,18 +13,18 @@ app.get("/", (req, res) => {
   const filePath = path.join(__dirname, "data", "generated.json");
   fs.readFile(filePath, "utf8", (err,data) => {
     if (err) {
-      //return res.status(500).json({error: "Failed to read file"})
+      return res.status(500).json({error: "Failed to read file"})
     }
     try {
+      data = JSON.parse(data)
       res.render('home', {
         data: data
       })
     } catch (err) {
       console.log(err)
-      //return res.status(500).json({error: "Failed to render"})
+      return res.status(500).json({error: "Failed to render"})
     }
   })
-  res.render('home.ejs')
 });
 
 app.get("/generate", async (req, res) => {

@@ -79,7 +79,7 @@ app.get("/generate", async (req, res) => {
         $('.FlavorText').remove()
         perk.description = $.text();
         tags.forEach((tag) => {
-          if (perk.description.indexOf(tag) > -1) {
+          if (perk.description.toLowerCase().indexOf(tag) > -1) {
             perk.tags.push(tag);
           }
         });

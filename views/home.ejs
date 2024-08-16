@@ -36,13 +36,13 @@
       <input id="search" class="flex w-1/2 p-3 justify-center text-black rounded">
       <div class="flex p-3 justify-center gap-6 rounded bg-slate-600">
         <% tags.forEach((tag) => { %>
-          <div class="flex bg-rose-400 rounded p-2 cursor-pointer hover:bg-rose-500" onclick=tagClick(this)>
+          <div class="flex bg-rose-400 rounded p-2 cursor-pointer transition duration-300 hover:bg-rose-500" data-tagname="<%= tag %>" onclick=tagClick(this)>
             <%= tag %>
           </div>
         <% }) %>
       </div>
       <% data.forEach((perk) => { %>
-        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>" data-tags="<%= perk.tags %>">
+        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>" data-tags="<%= JSON.stringify(perk.tags) %>">
           <div class="flex flex-col bg-purple-950 w-1/3 p-3">
             <img src=<%= perk.img %> class="flex justify-self-center w-full">
           </div>
@@ -77,12 +77,18 @@
            return "s" 
          }
        }
-      document.getElementById("search").addEventListener("input", event => {
+      function hasCommon(arr1, arr2) {
+        if ((arr1).length ==0) {
+          return true
+        } 
+        const set = new Set(arr1);
+        return arr2.some(element => set.has(element));
+      }
+      function updateFilter() {
         const perks = document.querySelectorAll('[data-name]');
-        var counter = 0
-        currentQuery = event.target.value
+        var counter = 0;
         perks.forEach((perk) => {
-          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1) {
+          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1 && hasCommon(currentTags, JSON.parse(perk.dataset.tags))) {
             perk.classList.remove("hidden")
             counter++
           } else {
@@ -90,14 +96,31 @@
           }
         })
         document.getElementById("perkCount").innerHTML = "Search for perks: ("+counter+" perk"+adjustPlurality(counter)+" found)"
+      }
+      document.getElementById("search").addEventListener("input", event => {
+        const perks = document.querySelectorAll('[data-name]');
+        var counter = 0
+        currentQuery = event.target.value
+        updateFilter()
       })
       function tagClick(element) {
-        var tagName = element.innerHTML 
+        var tagName = element.dataset.tagname 
         if (currentTags.includes(tagName)) {
-          currentTags.filter(item => item !== tagName)
+          currentTags = currentTags.filter(item => item !== tagName)
+          element.classList.remove("bg-emerald-400")
+          element.classList.remove("hover:bg-emerald-500")
+          element.classList.add("bg-rose-400")
+          element.classList.add("hover:bg-rose-500")
         } else {
           currentTags.push(tagName)
+          element.classList.add("bg-emerald-400")
+          element.classList.add("hover:bg-emerald-500")
+          element.classList.remove("bg-rose-400")
+          element.classList.remove("hover:bg-rose-500")
         }
+        console.log(currentTags)
+        updateFilter()
+        
       }
     </script>
   </body>

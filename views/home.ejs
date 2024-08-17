@@ -31,25 +31,25 @@
     </div>
     <div class="flex flex-col items-center">  
       <div id="selectedPerks" class="flex flex-row justify-center gap-16 p-8">
-        <div class="relative flex h-32 w-32 cursor-pointer">
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
           <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer">
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_noMither.png">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer">
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_forThePeople.png">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer">
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_decisiveStrike.png">
         </div>
       </div>
     </div>
-    <div id="perksList" class="flex flex-col items-center gap-3 p-6">
+    <div id="perksList" class="flex flex-col items-center gap-3 p-6 hidden">
       <h1 id="perkCount" class="flex text-xl font-bold">
         Search for perks: (<%= data.length+" perks found"%>)
       </h1>
@@ -62,7 +62,7 @@
         <% }) %>
       </div>
       <% data.forEach((perk) => { %>
-        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded" data-name="<%= perk.name %>" data-tags="<%= JSON.stringify(perk.tags) %>">
+        <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded cursor-pointer duration-300 transition hover:bg-slate-700" data-raw="<%= JSON.stringify(perk) %>" data-name="<%= perk.name %>" data-tags="<%= JSON.stringify(perk.tags) %>" onclick=savePerk(this)>
           <div class="flex flex-col bg-purple-950 w-1/3 p-3">
             <img src=<%= perk.img %> class="flex justify-self-center w-full">
           </div>
@@ -90,6 +90,7 @@
     <script>
       var currentQuery = ""
       var currentTags = []
+      var currentSetPerk = undefined;
       function adjustPlurality(inp) {
          if (inp == 1) {
            return ""
@@ -99,6 +100,18 @@
        }
       function hasCommon(arr1, arr2) {
         return arr1.every(element => arr2.includes(element));
+      }
+      function setPerk(element) {
+        if (currentSetPerk == undefined) {
+          document.getElementById("perksList").classList.remove("hidden")
+        }
+        currentSetPerk = element
+      }
+      function savePerk(element) {
+        var data = JSON.parse(element.dataset.raw)
+        currentSetPerk.children[1].src = data.img
+        document.getElementById("perksList").classList.add("hidden")
+        currentSetPerk = undefined
       }
       function updateFilter() {
         const perks = document.querySelectorAll('[data-name]');

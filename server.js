@@ -52,7 +52,7 @@ app.get("/generate", async (req, res) => {
         imageData.forEach((img) => {
           if (find == "coupdegrace") {
             perk.img =
-              "https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/b/bd/IconPerks_coupDeGr%C3%A2ce.png";
+              "";
             change = true;
           } else if (
             find ==

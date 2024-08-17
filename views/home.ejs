@@ -31,21 +31,21 @@
     </div>
     <div class="flex flex-col items-center">  
       <div id="selectedPerks" class="flex flex-row justify-center gap-16 p-8">
-        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this) data-setperkindex=0>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/7/75/IconPerks_deadHard.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this) data-setperkindex=1>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/f/f5/IconPerks_noMither.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this) data-setperkindex=2>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/3/31/IconPerks_forThePeople.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974">
         </div>
-        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this)>
+        <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this) data-setperkindex=3>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://static.wikia.nocookie.net/deadbydaylight_gamepedia_en/images/e/ee/IconPerks_decisiveStrike.png">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/IconHelp_perks.png?v=1723757760974">
         </div>
       </div>
     </div>
@@ -99,11 +99,6 @@
            return "s" 
          }
        }
-      function getChildOrder(childElement) {
-          const parentElement = childElement.parentElement;
-          const children = Array.from(parentElement.children);
-          const index = children.indexOf(childElement);
-      }
       function setPerk(element) {
         if (currentSetPerk == undefined) {
           document.getElementById("perksList").classList.remove("hidden")
@@ -116,7 +111,7 @@
       function savePerk(element) {
         var data = JSON.parse(element.dataset.raw)
         currentSetPerk.children[1].src = data.img
-        setPerks[getChildOrder(currentSetPerk)] = data
+        setPerks[currentSetPerk.dataset.setperkindex] = data
         console.log(setPerks)
         document.getElementById("perksList").classList.add("hidden")
         currentSetPerk.children[0].classList.remove("border-2")
@@ -129,7 +124,7 @@
         const perks = document.querySelectorAll('[data-name]');
         var counter = 0;
         perks.forEach((perk) => {
-          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1 && hasCommon(currentTags, JSON.parse(perk.dataset.tags))) {
+          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1 && hasCommon(currentTags, JSON.parse(perk.dataset.tags)) && !setPerks.includes(JSON.parse(perk.dataset.raw))) {
             perk.classList.remove("hidden")
             counter++
           } else {

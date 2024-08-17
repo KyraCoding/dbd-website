@@ -22,14 +22,18 @@
       };
     </script>
   </head>
-  <body class="bg-slate-950 font-mono text-white w-full">
-    <div class="flex flex-col items-center p-6">
-      <div class="flex text-5xl font-bold">Perks By Daylight</div>
-      <div class="flex text-2xl">
-        A Dead By Daylight buildcrafting tool by KyraCoding
-      </div>
+  <body class="bg-black font-mono text-white w-full">
+    <!-- Header -->
+    <div class="flex flex-row p-4 h-full bg-gray-800">
+      <a class="flex text-2xl font-bold" href="/">Perks By Daylight</a>
     </div>
-    <div class="flex flex-col items-center">  
+    <!-- Body -->
+    <div class="flex flex-row h-full w-full">
+      <div class="flex w-1/2">
+        
+      </div>
+      <div class="flex w-1/2">
+        <div class="flex flex-col items-center">  
       <div id="selectedPerks" class="flex flex-row justify-center gap-16 p-8">
         <div class="relative flex h-32 w-32 cursor-pointer" onclick=setPerk(this) data-setperkindex=0>
           <img class="rotate-45" src="https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/download%20(1).png?v=1723848174342">
@@ -49,7 +53,7 @@
         </div>
       </div>
     </div>
-    <div id="perksList" class="flex flex-col items-center gap-3 p-6 hidden">
+        <div id="perksList" class="flex flex-col items-center gap-3 p-6 hidden">
       <h1 id="perkCount" class="flex text-xl font-bold">
         Search for perks: (<%= data.length+" perks found"%>)
       </h1>
@@ -87,6 +91,9 @@
         </div>
       <% }) %>
     </div>
+      </div>
+    </div>
+   
     <script>
       var currentQuery = ""
       var currentTags = []
@@ -103,10 +110,10 @@
         if (currentSetPerk == undefined) {
           document.getElementById("perksList").classList.remove("hidden")
         } else {
-          currentSetPerk.children[0].classList.remove("border-2")
+          currentSetPerk.children[0].classList.remove("border-4")
         }
         currentSetPerk = element
-        currentSetPerk.children[0].classList.add("border-2")
+        currentSetPerk.children[0].classList.add("border-4")
         updateFilter()
       }
       function savePerk(element) {
@@ -114,7 +121,7 @@
         currentSetPerk.children[1].src = data.img
         setPerks[currentSetPerk.dataset.setperkindex] = data.name
         document.getElementById("perksList").classList.add("hidden")
-        currentSetPerk.children[0].classList.remove("border-2")
+        currentSetPerk.children[0].classList.remove("border-4")
         currentSetPerk = undefined
       }
       function hasCommon(arr1, arr2) {

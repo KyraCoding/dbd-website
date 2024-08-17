@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 
 const port = 3000;
 
-const tags = ["generator", "aura", "skill check", "hook", "heal"]
+const tags = ["generator", "aura", "skill check", "hook", "heal","chest"]
 
 app.get("/", (req, res) => {
   const filePath = path.join(__dirname, "data", "generated.json");

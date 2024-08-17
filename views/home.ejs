@@ -107,12 +107,12 @@
         }
         currentSetPerk = element
         currentSetPerk.children[0].classList.add("border-2")
+        updateFilter()
       }
       function savePerk(element) {
         var data = JSON.parse(element.dataset.raw)
         currentSetPerk.children[1].src = data.img
-        setPerks[currentSetPerk.dataset.setperkindex] = data
-        console.log(setPerks)
+        setPerks[currentSetPerk.dataset.setperkindex] = data.name
         document.getElementById("perksList").classList.add("hidden")
         currentSetPerk.children[0].classList.remove("border-2")
         currentSetPerk = undefined
@@ -124,7 +124,8 @@
         const perks = document.querySelectorAll('[data-name]');
         var counter = 0;
         perks.forEach((perk) => {
-          if (perk.dataset.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1 && hasCommon(currentTags, JSON.parse(perk.dataset.tags)) && !setPerks.includes(JSON.parse(perk.dataset.raw))) {
+          data = JSON.parse(perk.dataset.raw)
+          if (data.name.toLowerCase().indexOf(currentQuery.toLowerCase()) > -1 && hasCommon(currentTags, data.tags) && !setPerks.includes(data.name)) {
             perk.classList.remove("hidden")
             counter++
           } else {

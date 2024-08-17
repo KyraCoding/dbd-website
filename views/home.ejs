@@ -91,6 +91,7 @@
       var currentQuery = ""
       var currentTags = []
       var currentSetPerk = undefined;
+      var setPerks = [undefined, undefined, undefined, undefined]
       function adjustPlurality(inp) {
          if (inp == 1) {
            return ""
@@ -98,20 +99,31 @@
            return "s" 
          }
        }
-      function hasCommon(arr1, arr2) {
-        return arr1.every(element => arr2.includes(element));
+      function getChildOrder(childElement) {
+          const parentElement = childElement.parentElement;
+          const children = Array.from(parentElement.children);
+          const index = children.indexOf(childElement);
       }
       function setPerk(element) {
         if (currentSetPerk == undefined) {
           document.getElementById("perksList").classList.remove("hidden")
+        } else {
+          currentSetPerk.children[0].classList.remove("border-2")
         }
         currentSetPerk = element
+        currentSetPerk.children[0].classList.add("border-2")
       }
       function savePerk(element) {
         var data = JSON.parse(element.dataset.raw)
         currentSetPerk.children[1].src = data.img
+        setPerks[getChildOrder(currentSetPerk)] = data
+        console.log(setPerks)
         document.getElementById("perksList").classList.add("hidden")
+        currentSetPerk.children[0].classList.remove("border-2")
         currentSetPerk = undefined
+      }
+      function hasCommon(arr1, arr2) {
+        return arr1.every(element => arr2.includes(element));
       }
       function updateFilter() {
         const perks = document.querySelectorAll('[data-name]');

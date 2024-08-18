@@ -13,10 +13,33 @@
   </head>
   <body class="font-mono bg-[url('https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/Shiny%20Overlay%20(2).svg?v=1723946744373')] bg-cover bg-center" >
     <!-- Intro screen -->
-    <div class="flex h-screen w-screen justify-center items-center">
-      <h1 class="flex font-bold text-8xl animate-duration-1000 opacity-0 animate-delay-1000 animate-fadein text-celeste">
+    <div class="flex flex-col h-screen w-screen justify-center items-center">
+      <h1 class="flex font-bold text-8xl animate-duration-1000 opacity-0 animate-delay-500 animate-fadein text-celeste">
         Perks By Daylight
       </h1>
+      <br>
+      <div class="flex font-bold text-4xl animate-duration-1000 opacity-0 animate-delay-1000 animate-fadein text-celeste">
+        <p class="animate-pulse">
+          Press any key to continue
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col h-screen w-screen justify-center items-center">
+      <h1 class="flex font-bold text-8xl animate-duration-1000 opacity-0 animate-delay-500 animate-fadein text-celeste">
+        Choose a build type
+      </h1>
+      <br>
+      <div class="flex font-bold text-4xl animate-duration-1000 opacity-0 animate-delay-1000 animate-fadein text-celeste">
+        <p class="animate-pulse">
+          Killer
+        </p>
+        <p class="animate-pulse">
+          Survivor
+        </p>
+        <p class="animate-pulse">
+          View a already created build
+        </p>
+      </div>
     </div>
     <!-- Old -->
     <div class="hidden">
@@ -55,7 +78,7 @@
       <% data.forEach((perk) => { %>
         <div class="flex flex-row w-2/3 h-fit bg-slate-600 rounded cursor-pointer duration-300 transition hover:bg-slate-700" data-raw="<%= JSON.stringify(perk) %>" data-name="<%= perk.name %>" data-tags="<%= JSON.stringify(perk.tags) %>" onclick=savePerk(this)>
           <div class="flex flex-col bg-purple-950 w-1/3 p-3">
-            <img src=<%= perk.img %> class="flex justify-self-center w-full">
+            <img src="<%= perk.img %>" class="flex justify-self-center w-full" loading="lazy">
           </div>
           <div class="flex flex-col w-2/3 border-l">
             <div class="flex flex-col p-3 border-b gap-3">

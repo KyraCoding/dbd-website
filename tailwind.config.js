@@ -6,6 +6,13 @@ module.exports = {
       fontFamily: {
         mono: ['"roboto mono"', "sans-serif"],
       },
+      colors: {
+        "cream": "#FFEFD3",
+        "pumpkin": "#FC7753",
+        "forest": "#7C9082",
+        "hazel": "#B26E63",
+        "mud": "#654C4F"
+      },
       animation: {
         fadein: "fadein 0.2s ease-in-out",
         longerfadein: "fadein 0.5s ease-in-out",

@@ -4,24 +4,25 @@
   "description": "A simple Node app built on fastify, instantly up and running. Built to be remixed on Glitch.com.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "npx tailwindcss -i main.css -o views/assets/main.css && node server.js"
   },
   "dependencies": {
     "express": "^4.19.2",
     "node-fetch": "^2.7.0",
     "cheerio": "^0.22.0",
     "ejs": "^3.1.10",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   },
   "engines": {
     "node": "14.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+    "url": "https://github.com/MrMeCoding/dbd-website"
   },
   "license": "MIT",
   "keywords": [
-    "node",
-    "glitch"
+    "dead by daylight",
+    "analytics"
   ]
 }

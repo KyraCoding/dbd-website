@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "views/assets")));
 
 const port = 3000;
 
-const tags = ["generator", "aura", "skill check", "hook", "heal","chest"]
+const tags = ["generator", "aura", "skill check", "hook", "heal","chest","injured","exhausted","haste"]
 
 app.get("/", (req, res) => {
   const filePath = path.join(__dirname, "data", "generated.json");

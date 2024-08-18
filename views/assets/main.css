@@ -634,6 +634,20 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadein {
+  animation: fadein 0.2s ease-in-out;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -710,6 +724,18 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'https\:\/\/cdn\.glitch\.global\/3ff7f89e-c0d6-4346-976f-7ae445c76682\/Shiny\%20Overlay\%20\(2\)\.svg\?v\=1723946744373\'\)\] {
+  background-image: url('https://cdn.glitch.global/3ff7f89e-c0d6-4346-976f-7ae445c76682/Shiny%20Overlay%20(2).svg?v=1723946744373');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -728,6 +754,11 @@ video {
 
 .font-mono {
   font-family: "roboto mono", sans-serif;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -758,6 +789,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-celeste {
+  --tw-text-opacity: 1;
+  color: rgb(185 250 248 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -777,6 +813,14 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.animate-duration-1000 {
+  animation-duration: 1000ms;
+}
+
+.animate-delay-1000 {
+  animation-delay: 1000ms;
 }
 
 .hover\:bg-emerald-500:hover {

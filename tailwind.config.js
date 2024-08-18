@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./views/**/*.{html,js,ejs}"],
   theme: {
@@ -7,11 +9,11 @@ module.exports = {
         mono: ['"roboto mono"', "sans-serif"],
       },
       colors: {
-        "cream": "#FFEFD3",
-        "pumpkin": "#FC7753",
-        "forest": "#7C9082",
-        "hazel": "#B26E63",
-        "mud": "#654C4F"
+        celeste: "#B9FAF8",
+        columbia: "#B8D0EB",
+        wisteria: "#B8D0EB",
+        amethyst: "#A663CC",
+        grape: "#6F2DBD",
       },
       animation: {
         fadein: "fadein 0.2s ease-in-out",
@@ -39,5 +41,27 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-duration": (value) => ({
+            animationDuration: value,
+          }),
+        },
+        { values: theme("transitionDuration") }
+      );
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'animate-delay': (value) => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme('transitionDelay') }
+      )
+    }),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };

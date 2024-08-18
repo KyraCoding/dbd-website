@@ -10,7 +10,8 @@
     "express": "^4.19.2",
     "node-fetch": "^2.7.0",
     "cheerio": "^0.22.0",
-    "ejs": "^3.1.10"
+    "ejs": "^3.1.10",
+    "tailwindcss": "^3.4.6"
   },
   "engines": {
     "node": "14.x"

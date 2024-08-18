@@ -16,11 +16,8 @@ module.exports = {
         grape: "#6F2DBD",
       },
       animation: {
-        fadein: "fadein 0.2s ease-in-out",
-        longerfadein: "fadein 0.5s ease-in-out",
-        fadeout: "fadeout 0.2s ease-in-out",
-        longerfadeout: "fadeout 0.5s ease-in-out",
-        slidetoleft: "slidetoleft 5.5s linear",
+        fadein: "fadein ease-in-out forwards",
+        fadeout: "fadeout ease-in-out forwards",
       },
       keyframes: (theme) => ({
         fadein: {
@@ -30,11 +27,7 @@ module.exports = {
         fadeout: {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 },
-        },
-        slidetoleft: {
-          "0%": { width: "100%" },
-          "100%": { width: "0%" },
-        },
+        }
       }),
     },
   },
